@@ -24,7 +24,7 @@ net session 2>nul >nul
 if %errorlevel% neq 0 (
 echo.
 echo.  Please run this program as administrator.
-cd %userprofile% & elevate -noui "%~s0"
+cd "%userprofile%" & elevate.exe -noui "%~s0"
 ping localhost -n 2 >nul
 exit /b
 )
